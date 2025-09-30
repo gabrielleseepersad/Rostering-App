@@ -1,8 +1,26 @@
 ![Tests](https://github.com/uwidcit/flaskmvc/actions/workflows/dev.yml/badge.svg)
 
-# Flask MVC Template
-A template for flask applications structured in the Model View Controller pattern [Demo](https://dcit-flaskmvc.herokuapp.com/). [Postman Collection](https://documenter.getpostman.com/view/583570/2s83zcTnEJ)
+# COMP3613 ASSIGNMENT 1 - Rostering Application
+An command line rostering application that allows admin and staff to perform required tasks.
 
+# User Requirements
+(Admin) Schedule a staff member shifts for the week
+(Staff) View combined roster of all staff
+(Staff) Time in/Time out at the stat/end of shift
+(Admin) View shift report for the week
+
+# User CLI Commands
+1. flask create (username, password) -> create a new user
+2. flask list -> list all user profiles
+
+# Admin CLI Commands
+1. flask schedule-staff -> assigns staff to a shift based on staffid and shift(admins only)
+2. flask view-report -> view shift reports for a particular week (admins only)
+
+# Staff CLI Commands
+1. flask view-combined-roster (week) -> view roster with all staff members assigned for that week
+2. flask clock-in (staffid, date) -> allows staff to clock in and records time clocked in
+3. flask clock-out (staffid, date) -> allows staff to clock out and records time clocked out
 
 # Dependencies
 * Python3/pip3
