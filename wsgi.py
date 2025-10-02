@@ -6,7 +6,7 @@ from datetime import datetime
 from App.database import db, get_migrate
 from App.models import User, Staff, Admin, Roster, TimeLog, Shift
 from App.main import create_app
-from App.controllers import ( create_user, get_all_users_json, get_all_users, initialize,  )
+from App.controllers import ( create_user, get_all_users_json, get_all_users, initialize)
 
 
 # This commands file allow you to create convenient CLI commands for testing controllers
@@ -190,6 +190,7 @@ def viewReportCommand(week):
         return
     Admin.viewReport(week)
     
+
 #Test Commands
 
 test = AppGroup('test', help='Testing commands') 
