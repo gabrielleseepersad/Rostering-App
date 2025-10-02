@@ -1,8 +1,5 @@
 from App.database import db
-<<<<<<< HEAD
 from .shift import Shift
-=======
->>>>>>> 3e8b13d3f8813c2b1f358000033cd4a82234613c
 
 class TimeLog(db.Model):
     timeid = db.Column(db.Integer, primary_key=True)
@@ -16,11 +13,7 @@ class TimeLog(db.Model):
     def __init__(self, staffid, shiftid, clockedin, clockedout):
         self.staffid = staffid
         self.shiftid = shiftid
-<<<<<<< HEAD
         self.clockedin = clockedin
-=======
-        self.clockedin = clocked
->>>>>>> 3e8b13d3f8813c2b1f358000033cd4a82234613c
         self.clockedout = clockedout
 
     def calculateHours(self):
@@ -33,9 +26,5 @@ class TimeLog(db.Model):
         return 0
 
     def __repr__(self):
-<<<<<<< HEAD
         return f'<Staff {self.staffid} - Shift {self.shiftid} - Clocked In {self.clockedin} - Clocked Out {self.clockedout}>' 
-=======
-        return f'<Staff {self.staffid} - Shift {self.shiftid} - Clocked In {self.clockedin} - Clocked Out {self.clockedout}>'
->>>>>>> 3e8b13d3f8813c2b1f358000033cd4a82234613c
         
